@@ -1,0 +1,33 @@
+{
+  "name": "vue-device-detector-js",
+  "version": "1.0.1",
+  "description": "vue wrapper library for device-detector-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xceldeveloper/vue-device-detector-js.git"
+  },
+  "keywords": [
+    "device",
+    "detector",
+    "vue",
+    "desktop",
+    "mobile",
+    "tablet",
+    "user-agent",
+    "browser"
+  ],
+  "engines": {
+    "node": ">= 8.11.4"
+  },
+  "dependencies": {"device-detector-js": "2.2.7"},
+  "author": "xceldeveloper <xceldeveloper@gmail.com> (xceldeveloper.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xceldeveloper/vue-device-detector-js/issues"
+  },
+  "homepage": "https://github.com/Xceldeveloper/vue-device-detector-js#readme"
+}
