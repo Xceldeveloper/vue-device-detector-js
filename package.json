@@ -1,6 +1,6 @@
 {
   "name": "vue-device-detector-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "vue wrapper library for device-detector-js",
   "main": "index.js",
   "scripts": {

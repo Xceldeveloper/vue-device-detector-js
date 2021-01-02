@@ -2,7 +2,9 @@
 vue wrapper for [device-detector-js](https://www.npmjs.com/package/device-detector-js)
 
 ## Installation
+```javascript
 npm i vue-device-detector-js
+```
 
 
 ## Setup 
@@ -11,7 +13,7 @@ npm i vue-device-detector-js
 
   ```javascript
 
-  //add code below to main.js 
+  //add code  to main.js 
   import device from 'vue-device-detector-js'
   ...
 
@@ -30,7 +32,7 @@ npm i vue-device-detector-js
   import device from 'vue-device-detector-js'
   Vue.use(device)
   
-  //add code below to nuxt.config.js 
+  //add code  to nuxt.config.js 
   ...
   
    plugins: [
@@ -59,7 +61,7 @@ npm i vue-device-detector-js
      <div v-else-if="$device.os.windows_phone">Windows Mobile</div>
     <div v-else-if="$device.isOSx">MAc</div>
 
-  <span v-if="$device.browser.m_msie" >{{$device.browser_name}}</span>
+  <span v-if="$device.browser.chrome" >{{$device.browser_name}}</span>
   </div>
 </template>
 
@@ -67,7 +69,9 @@ npm i vue-device-detector-js
 export default {
   mounted() {
     console.log(this.$device.machine);
-   
+    if(this.$device.isAndroid){
+      console.log("I am using an Android Device")
+    }
   },
 };
 </script>
@@ -77,7 +81,7 @@ export default {
 
 ```
 
-## Acess Flags
+## Access Flags
 
  ```javascript
  
@@ -144,7 +148,13 @@ export default {
   $device.browser.msedge
   $device.browser.msie_mobile
   $device.browser.msie
-        
 
+
+  $device.client //object
+  $device.detector //object
+  $device.bot //object
+  $device.machine //object
+        
+//NOTE instance.$device   (this.$device)
 
 ```
